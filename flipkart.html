@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart | iPhone 15 Pro Max</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f1f3f6;
+        }
+
+        /* Header */
+        .header {
+            background-color: #2874f0;
+            color: white;
+            padding: 15px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-bar {
+            background-color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px;
+            width: 300px;
+            font-size: 14px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            background-color: white;
+            display: flex;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .left {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fafafa;
+        }
+
+        .left img {
+            max-width: 100%;
+            max-height: 400px;
+        }
+
+        .right {
+            flex: 2;
+            padding: 30px;
+        }
+
+        .right h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            background-color: #388e3c;
+            color: white;
+            padding: 2px 6px;
+            font-size: 14px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: bold;
+            color: #b12704;
+            margin: 10px 0;
+        }
+
+        .offer {
+            color: green;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            margin-top: 15px;
+            color: #444;
+            font-size: 15px;
+        }
+
+        .delivery {
+            margin: 15px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 16px;
+            margin-right: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .buy {
+            background-color: #fb641b;
+            color: white;
+        }
+
+        .cart {
+            background-color: #ff9f00;
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        Flipkart
+        <input type="text" class="search-bar" placeholder="Search for Products, Brands and more" />
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <img src="https://m.media-amazon.com/images/I/71d7rfSl0wL._SX679_.jpg" alt="iPhone 15 Pro Max">
+        </div>
+
+        <div class="right">
+            <h1>Apple iPhone 15 Pro Max (256 GB) - Natural Titanium</h1>
+            <span class="rating">4.8 ★</span>
+            <p class="price">₹65,000</p>
+            <p class="offer">Extra ₹5,000 Off on Exchange • No Cost EMI available</p>
+
+            <p class="delivery">Delivery by <strong>Tomorrow</strong> | <span style="color:green">Free</span></p>
+
+            <p class="desc">
+                - 6.7-inch Super Retina XDR display <br>
+                - A17 Pro chip for lightning-fast performance <br>
+                - 48MP main camera with 5x telephoto zoom <br>
+                - All-day battery life | Face ID | iOS 17 <br>
+                - USB-C fast charging
+            </p>
+
+            <div class="buttons">
+                <button class="btn cart">Add to Cart</button>
+                <button class="btn buy">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
